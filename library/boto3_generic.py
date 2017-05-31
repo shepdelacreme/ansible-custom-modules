@@ -60,8 +60,7 @@ extends_documentation_fragment:
 EXAMPLES = '''
 # Note: These examples do not set authentication details, see the AWS Guide for details.
 
-# Ensure that the VPC has an Internet Gateway.
-# The Internet Gateway ID is can be accessed via {{eigw.gateway_id}} for use in setting up NATs etc.
+# Grab info for all VPCs and register output for later consumption
 boto3_generic:
   service: ec2
   conn_type: client
